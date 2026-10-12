@@ -1,14 +1,194 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Регистрация — BestGames</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body class="account-page">
-    <header class="site-header"><div class="site-header__inner"><a class="logo" href="index.html" aria-label="BestGames — главная"><span class="logo__mark">b<span>.</span></span><span class="logo__name">bestgames</span></a><nav class="site-nav" aria-label="Основная навигация"><a class="site-nav__link" href="index.html">Главная</a><a class="site-nav__link" href="index.html#search">Поиск</a><a class="site-nav__link" href="catalog.html">Каталог</a><a class="site-nav__link" href="profile.html">Мой профиль</a></nav><a class="button button--dark site-header__login" href="login.html">Войти <span aria-hidden="true">↗</span></a></div></header>
-    <main class="account-layout account-layout--register"><aside class="account-aside account-aside--register"><p class="eyebrow"><span class="eyebrow__dot"></span> Новая игра начинается здесь</p><h1>Хорошо,<br>что вы <span>с нами.</span></h1><p>Создайте аккаунт, чтобы сохранять любимое и находить новое.</p><div class="account-aside__note"><span>01</span><p>Пара минут — и можно выбирать следующую игру.</p></div><span class="account-aside__mark">b.</span></aside><section class="account-card account-card--form" aria-labelledby="register-title"><p class="eyebrow">Добро пожаловать</p><h2 class="section-title" id="register-title">Создать аккаунт</h2><p class="account-card__intro">Расскажите немного о себе — это займёт минуту.</p><form class="form-stack" action="#" method="post"><div class="form-field"><label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required></div><div class="form-grid"><div class="form-field"><label for="surname">Фамилия</label><input id="surname" name="surname" type="text" placeholder="Иванов" autocomplete="family-name" required></div><div class="form-field"><label for="first-name">Имя</label><input id="first-name" name="first-name" type="text" placeholder="Иван" autocomplete="given-name" required></div></div><div class="form-grid"><div class="form-field"><label for="birth-date">Дата рождения</label><input id="birth-date" name="birth-date" type="date" autocomplete="bday" required></div><div class="form-field"><label for="phone">Номер телефона</label><input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required></div></div><div class="form-grid"><div class="form-field"><label for="password">Пароль</label><input id="password" name="password" type="password" placeholder="Придумайте пароль" autocomplete="new-password" required></div><div class="form-field"><label for="password-repeat">Повтор пароля</label><input id="password-repeat" name="password-repeat" type="password" placeholder="Ещё раз пароль" autocomplete="new-password" required></div></div><label class="check-field"><input type="checkbox" name="personal-data" required><span>Согласен на обработку персональных данных</span></label><button class="button button--lime button--wide" type="submit">Зарегистрироваться <span aria-hidden="true">↗</span></button></form><p class="account-card__switch">Уже зарегистрированы? <a href="login.html">Войти <span aria-hidden="true">↗</span></a></p></section></main>
-    <footer class="site-footer"><div class="site-footer__inner"><a class="logo logo--footer" href="index.html"><span class="logo__mark">b<span>.</span></span><span class="logo__name">bestgames</span></a><p>Игры для хороших вечеров.</p><div class="site-footer__contacts"><a href="tel:88009995599">8-800-999-55-99</a><a href="mailto:best@games.ru">best@games.ru</a></div><a class="site-footer__about" href="index.html#about">О нас</a><span class="site-footer__copy">© BestGames, 2026</span></div></footer>
-</body>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Регистрация — BestGames
+        </title>
+        <link href="css/main.css" rel="stylesheet"/>
+    </head>
+    <body class="account-page">
+        <header class="site-header">
+            <div class="site-header__inner">
+                <a aria-label="BestGames — главная" class="logo" href="index.html">
+                    <span class="logo__mark">
+                        b
+                        <span>
+                            .
+                        </span>
+                    </span>
+                    <span class="logo__name">
+                        bestgames
+                    </span>
+                </a>
+                <nav aria-label="Основная навигация" class="site-nav">
+                    <a class="site-nav__link" href="index.html">
+                        Главная
+                    </a>
+                    <a class="site-nav__link" href="index.html#search">
+                        Поиск
+                    </a>
+                    <a class="site-nav__link" href="catalog.html">
+                        Каталог
+                    </a>
+                    <a class="site-nav__link" href="profile.html">
+                        Мой профиль
+                    </a>
+                </nav>
+                <a class="button button--dark site-header__login" href="login.html">
+                    Войти
+                    <span aria-hidden="true">
+                        ↗
+                    </span>
+                </a>
+            </div>
+        </header>
+        <main class="account-layout account-layout--register">
+            <aside class="account-aside account-aside--register">
+                <p class="eyebrow">
+                    <span class="eyebrow__dot">
+                    </span>
+                    Новая игра начинается здесь
+                </p>
+                <h1>
+                    Хорошо,
+                    <br/>
+                    что вы
+                    <span>
+                        с нами.
+                    </span>
+                </h1>
+                <p>
+                    Создайте аккаунт, чтобы сохранять любимое и находить новое.
+                </p>
+                <div class="account-aside__note">
+                    <span>
+                        01
+                    </span>
+                    <p>
+                        Пара минут — и можно выбирать следующую игру.
+                    </p>
+                </div>
+                <span class="account-aside__mark">
+                    b.
+                </span>
+            </aside>
+            <section aria-labelledby="register-title" class="account-card account-card--form">
+                <p class="eyebrow">
+                    Добро пожаловать
+                </p>
+                <h2 class="section-title" id="register-title">
+                    Создать аккаунт
+                </h2>
+                <p class="account-card__intro">
+                    Заполните данные — профиль сохранится в этом браузере.
+                </p>
+                <form action="#" class="form-stack" id="register-form" method="post">
+                    <div class="form-field">
+                        <label for="email">
+                            E-mail
+                        </label>
+                        <input autocomplete="email" id="email" name="email" placeholder="name@example.com" required="" type="email"/>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="surname">
+                                Фамилия
+                            </label>
+                            <input autocomplete="family-name" id="surname" name="surname" placeholder="Иванов" required="" type="text"/>
+                        </div>
+                        <div class="form-field">
+                            <label for="first-name">
+                                Имя
+                            </label>
+                            <input autocomplete="given-name" id="first-name" name="first-name" placeholder="Иван" required="" type="text"/>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="birth-date">
+                                Дата рождения
+                            </label>
+                            <input autocomplete="bday" id="birth-date" name="birth-date" required="" type="date"/>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">
+                                Номер телефона
+                            </label>
+                            <input autocomplete="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required="" type="tel"/>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="password">
+                                Пароль
+                            </label>
+                            <input autocomplete="new-password" id="password" name="password" placeholder="Придумайте пароль" required="" type="password"/>
+                        </div>
+                        <div class="form-field">
+                            <label for="password-repeat">
+                                Повтор пароля
+                            </label>
+                            <input autocomplete="new-password" id="password-repeat" name="password-repeat" placeholder="Ещё раз пароль" required="" type="password"/>
+                        </div>
+                    </div>
+                    <label class="check-field">
+                        <input name="personal-data" required="" type="checkbox"/>
+                        <span>
+                            Согласен на обработку персональных данных
+                        </span>
+                    </label>
+                    <p class="form-message" id="register-message" aria-live="polite" role="status"></p>
+                    <button class="button button--lime button--wide" type="submit">
+                        Зарегистрироваться
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+                    </button>
+                </form>
+                <p class="account-card__switch">
+                    Уже зарегистрированы?
+                    <a href="login.html">
+                        Войти
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+                    </a>
+                </p>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <a class="logo logo--footer" href="index.html">
+                    <span class="logo__mark">
+                        b
+                        <span>
+                            .
+                        </span>
+                    </span>
+                    <span class="logo__name">
+                        bestgames
+                    </span>
+                </a>
+                <p>
+                    Игры для хороших вечеров.
+                </p>
+                <div class="site-footer__contacts">
+                    <a href="tel:88009995599">
+                        8-800-999-55-99
+                    </a>
+                    <a href="mailto:best@games.ru">
+                        best@games.ru
+                    </a>
+                </div>
+                <a class="site-footer__about" href="index.html#about">
+                    О нас
+                </a>
+                <span class="site-footer__copy">
+                    © BestGames, 2026
+                </span>
+            </div>
+        </footer>
+    </body>
 </html>

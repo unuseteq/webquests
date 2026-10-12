@@ -1,22 +1,503 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог игр — BestGames</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header class="site-header"><div class="site-header__inner"><a class="logo" href="index.html" aria-label="BestGames — главная"><span class="logo__mark">b<span>.</span></span><span class="logo__name">bestgames</span></a><nav class="site-nav" aria-label="Основная навигация"><a class="site-nav__link" href="index.html">Главная</a><a class="site-nav__link" href="index.html#search">Поиск</a><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a><a class="site-nav__link" href="profile.html">Мой профиль</a></nav><a class="button button--dark site-header__login" href="login.html">Войти <span aria-hidden="true">↗</span></a></div></header>
-    <main class="page-width catalog-page"><div class="section-heading catalog-heading"><div><p class="eyebrow">Выбирайте настроение</p><h1 class="section-title">Игры<span class="title-dot">.</span></h1><p class="catalog-heading__count">Свежие релизы и любимые жанры — в одном месте.</p></div><form class="search-form search-form--catalog" action="catalog.html" method="get"><label class="visually-hidden" for="catalog-search">Поиск по каталогу</label><input id="catalog-search" type="search" name="q" placeholder="Найти игру"><button class="button button--dark" type="submit">Найти <span aria-hidden="true">↗</span></button></form></div><div class="catalog-filters" aria-label="Жанры"><a class="filter-pill filter-pill--active" href="catalog.html">Все игры <span>06</span></a><a class="filter-pill" href="#adventure">Приключения</a><a class="filter-pill" href="#action">Экшен</a><a class="filter-pill" href="#racing">Гонки</a><a class="filter-pill" href="#strategy">Стратегии</a></div><div class="catalog-grid" id="catalog-list"><article class="game-card game-card--catalog" id="adventure"><a class="game-card__art-link" href="#adventure"><img class="game-card__image" src="assets/cosmic-raid.svg" alt="Космическое приключение «Космический рейд»"></a><div class="game-card__body"><div class="game-card__meta"><span>Приключение · 2026</span><span class="rating" aria-label="Рейтинг: 5 из 5">★★★★★</span></div><h2 class="game-card__title">Космический рейд</h2><p class="game-card__developer">Northstar Games</p><p class="game-card__description">На краю изученной галактики вас ждут новые миры и команда, которой можно доверять.</p><div class="game-card__bottom"><span class="price">1 499 ₽</span><a class="button button--lime button--small" href="#adventure">Подробнее <span aria-hidden="true">↗</span></a></div></div></article><article class="game-card game-card--catalog" id="action"><a class="game-card__art-link" href="#action"><img class="game-card__image" src="assets/frostline.svg" alt="Заснеженный мир игры «Северный маршрут»"></a><div class="game-card__body"><div class="game-card__meta"><span>Выживание · 2026</span><span class="rating" aria-label="Рейтинг: 4 из 5">★★★★<span class="rating__empty">★</span></span></div><h2 class="game-card__title">Северный маршрут</h2><p class="game-card__developer">Тихая бухта</p><p class="game-card__description">Небольшое путешествие по северным дорогам, где решения важны не меньше снаряжения.</p><div class="game-card__bottom"><span class="price">999 ₽</span><a class="button button--lime button--small" href="#action">Подробнее <span aria-hidden="true">↗</span></a></div></div></article><article class="game-card game-card--catalog" id="racing"><a class="game-card__art-link" href="#racing"><img class="game-card__image" src="assets/drift-77.svg" alt="Гоночная трасса из игры «Дрифт 77»"></a><div class="game-card__body"><div class="game-card__meta"><span>Гонки · 2025</span><span class="rating" aria-label="Рейтинг: 5 из 5">★★★★★</span></div><h2 class="game-card__title">Дрифт 77</h2><p class="game-card__developer">Красный круг</p><p class="game-card__description">Ночной город, знакомые улицы и заезд, который всё ещё хочется повторить.</p><div class="game-card__bottom"><span class="price">1 299 ₽</span><a class="button button--lime button--small" href="#racing">Подробнее <span aria-hidden="true">↗</span></a></div></div></article><article class="game-card game-card--catalog" id="strategy"><a class="game-card__art-link" href="#strategy"><img class="game-card__image" src="assets/cosmic-raid.svg" alt="Звёздные системы из игры «Орбита»"></a><div class="game-card__body"><div class="game-card__meta"><span>Стратегия · 2025</span><span class="rating" aria-label="Рейтинг: 4 из 5">★★★★<span class="rating__empty">★</span></span></div><h2 class="game-card__title">Орбита</h2><p class="game-card__developer">Northstar Games</p><p class="game-card__description">Исследуйте сектора, заключайте союзы и стройте свой уголок среди звёзд.</p><div class="game-card__bottom"><span class="price">799 ₽</span><a class="button button--lime button--small" href="#strategy">Подробнее <span aria-hidden="true">↗</span></a></div></div></article><article class="game-card game-card--catalog" id="long-road"><a class="game-card__art-link" href="#long-road"><img class="game-card__image" src="assets/frostline.svg" alt="Зимняя дорога в игре «Длинная дорога»"></a><div class="game-card__body"><div class="game-card__meta"><span>Приключение · 2025</span><span class="rating" aria-label="Рейтинг: 5 из 5">★★★★★</span></div><h2 class="game-card__title">Длинная дорога</h2><p class="game-card__developer">Тихая бухта</p><p class="game-card__description">История о дороге домой, маленьких остановках и людях, встреченных в пути.</p><div class="game-card__bottom"><span class="price">649 ₽</span><a class="button button--lime button--small" href="#description-long-road">Подробнее <span aria-hidden="true">↗</span></a></div></div></article><article class="game-card game-card--catalog" id="last-lap"><a class="game-card__art-link" href="#last-lap"><img class="game-card__image" src="assets/drift-77.svg" alt="Неоновая трасса из игры «Последний круг»"></a><div class="game-card__body"><div class="game-card__meta"><span>Гонки · 2024</span><span class="rating" aria-label="Рейтинг: 4 из 5">★★★★<span class="rating__empty">★</span></span></div><h2 class="game-card__title">Последний круг</h2><p class="game-card__developer">Красный круг</p><p class="game-card__description">Соберите машину под свой стиль и найдите идеальную траекторию.</p><div class="game-card__bottom"><span class="price">899 ₽</span><a class="button button--lime button--small" href="#description-last-lap">Подробнее <span aria-hidden="true">↗</span></a></div></div></article></div>
-        <div class="game-details" aria-live="polite">
-            <article class="game-detail" id="description-cosmic"><img src="assets/cosmic-raid.svg" alt="??????????? ???? ? ??????? ?? ???? ???????"><div><p class="eyebrow">??????????? ? Northstar Games</p><h2>??????????? ????</h2><p>?????????? ??????? ???????, ????????? ??????? ? ?????????, ? ??? ?????? ??????? ?? ??????? ?????????. ? ????? ????? ??????? ?????????? ? ?? ?????.</p><div class="game-detail__bottom"><span class="price">1 499 ?</span><a class="text-link" href="#catalog-list">????? ? ???????? <span aria-hidden="true">?</span></a></div></div></article>
-            <article class="game-detail" id="description-frostline"><img src="assets/frostline.svg" alt="???????? ??????? ? ?????? ????? ??????? ???"><div><p class="eyebrow">????????? ? ????? ?????</p><h2>???????? ???????</h2><p>?????????? ?? ???? ????? ??????????? ?????????. ?? ?????? ???????? ?????? ???????, ????????? ????????? ??????? ? ????????, ???? ??????.</p><div class="game-detail__bottom"><span class="price">999 ?</span><a class="text-link" href="#catalog-list">????? ? ???????? <span aria-hidden="true">?</span></a></div></div></article>
-            <article class="game-detail" id="description-drift"><img src="assets/drift-77.svg" alt="????? 77 ? ?????????? ?????????? ?? ?????? ??????"><div><p class="eyebrow">????? ? ??????? ????</p><h2>????? 77</h2><p>?????? ????? ?????????? ???????. ????????? ??????, ??????? ???????? ? ??????? ???? ????? ? ??????? ? ????????? ???????.</p><div class="game-detail__bottom"><span class="price">1 299 ?</span><a class="text-link" href="#catalog-list">????? ? ???????? <span aria-hidden="true">?</span></a></div></div></article>
-            <article class="game-detail" id="description-orbit"><img src="assets/cosmic-raid.svg" alt="?????? ? ???????? ??????? ?? ????? ?????????"><div><p class="eyebrow">????????? ? Northstar Games</p><h2>??????</h2><p>????????? ???? ???????, ?????????? ???????? ??????? ? ???????, ??? ???????? ????????? ? ????, ??? ??? ????? ????? ?????.</p><div class="game-detail__bottom"><span class="price">799 ?</span><a class="text-link" href="#catalog-list">????? ? ???????? <span aria-hidden="true">?</span></a></div></div></article>
-            <article class="game-detail" id="description-long-road"><img src="assets/frostline.svg" alt="??????? ?????? ? ???? ????? ?????? ??????"><div><p class="eyebrow">??????????? ? ????? ?????</p><h2>??????? ??????</h2><p>?????? ??????? ? ?????? ???? ?????. ???????????? ? ????????? ??????, ??????????? ? ??????????? ? ?? ?????????? ????????? ????.</p><div class="game-detail__bottom"><span class="price">649 ?</span><a class="text-link" href="#catalog-list">????? ? ???????? <span aria-hidden="true">?</span></a></div></div></article>
-            <article class="game-detail" id="description-last-lap"><img src="assets/drift-77.svg" alt="????????? ???? ? ?????????? ????????? ?????"><div><p class="eyebrow">????? ? ??????? ????</p><h2>????????? ????</h2><p>????????? ?????? ??? ?????? ???????, ??????? ????????? ????? ??????? ? ????????? ????? ?? ???????? ????????? ???????.</p><div class="game-detail__bottom"><span class="price">899 ?</span><a class="text-link" href="#catalog-list">????? ? ???????? <span aria-hidden="true">?</span></a></div></div></article>
-        </div></main>
-    <footer class="site-footer"><div class="site-footer__inner"><a class="logo logo--footer" href="index.html"><span class="logo__mark">b<span>.</span></span><span class="logo__name">bestgames</span></a><p>Игры для хороших вечеров.</p><div class="site-footer__contacts"><a href="tel:88009995599">8-800-999-55-99</a><a href="mailto:best@games.ru">best@games.ru</a></div><a class="site-footer__about" href="index.html#about">О нас</a><span class="site-footer__copy">© BestGames, 2026</span></div></footer>
-</body>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Каталог игр — BestGames
+        </title>
+        <link href="css/main.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="site-header__inner">
+                <a aria-label="BestGames — главная" class="logo" href="index.html">
+                    <span class="logo__mark">
+                        b
+                        <span>
+                            .
+                        </span>
+                    </span>
+                    <span class="logo__name">
+                        bestgames
+                    </span>
+                </a>
+                <nav aria-label="Основная навигация" class="site-nav">
+                    <a class="site-nav__link" href="index.html">
+                        Главная
+                    </a>
+                    <a class="site-nav__link" href="index.html#search">
+                        Поиск
+                    </a>
+                    <a class="site-nav__link site-nav__link--active" href="catalog.html">
+                        Каталог
+                    </a>
+                    <a class="site-nav__link" href="profile.html">
+                        Мой профиль
+                    </a>
+                </nav>
+                <a class="button button--dark site-header__login" href="login.html">
+                    Войти
+                    <span aria-hidden="true">
+                        ↗
+                    </span>
+                </a>
+            </div>
+        </header>
+        <main class="page-width catalog-page">
+            <div class="section-heading catalog-heading">
+                <div>
+                    <p class="eyebrow">
+                        Выбирайте настроение
+                    </p>
+                    <h1 class="section-title">
+                        Игры
+                        <span class="title-dot">
+                            .
+                        </span>
+                    </h1>
+                    <p class="catalog-heading__count">
+                        Свежие релизы и любимые жанры — в одном месте.
+                    </p>
+                </div>
+                <form action="catalog.html" class="search-form search-form--catalog" method="get">
+                    <label class="visually-hidden" for="catalog-search">
+                        Поиск по каталогу
+                    </label>
+                    <input id="catalog-search" name="q" placeholder="Найти игру" type="search"/>
+                    <button class="button button--dark" type="submit">
+                        Найти
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div aria-label="Жанры" class="catalog-filters">
+                <a class="filter-pill filter-pill--active" href="catalog.html">
+                    Все игры
+                    <span>
+                        06
+                    </span>
+                </a>
+                <a class="filter-pill" href="#adventure">
+                    RPG
+                </a>
+                <a class="filter-pill" href="#action">
+                    Action RPG
+                </a>
+                <a class="filter-pill" href="#racing">
+                    Симулятор фермы
+                </a>
+                <a class="filter-pill" href="#strategy">
+                    Рогалик
+                </a>
+            </div>
+            <div class="catalog-grid" id="catalog-list">
+                <article class="game-card game-card--catalog" id="adventure">
+                    <a class="game-card__art-link" href="#description-cosmic">
+                        <img alt="Официальная обложка Cyberpunk 2077" class="game-card__image" src="assets/cyberpunk-2077.jpg"/>
+                    </a>
+                    <div class="game-card__body">
+                        <div class="game-card__meta">
+                            <span>
+                                RPG · 2020
+                            </span>
+                            <span aria-label="Рейтинг: 5 из 5" class="rating">
+                                ★★★★★
+                            </span>
+                        </div>
+                        <h2 class="game-card__title">
+                            Cyberpunk 2077
+                        </h2>
+                        <p class="game-card__developer">
+                            CD PROJEKT RED
+                        </p>
+                        <p class="game-card__description">
+                            Исследуйте Найт-Сити, берите заказы и решайте, каким станет путь наёмника Ви.
+                        </p>
+                        <div class="game-card__bottom">
+                            <span class="price">
+                                1 499 ₽
+                            </span>
+                            <a class="button button--lime button--small" href="#description-cosmic">
+                                Подробнее
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-card game-card--catalog" id="action">
+                    <a class="game-card__art-link" href="#description-frostline">
+                        <img alt="Официальная обложка Elden Ring" class="game-card__image" src="assets/elden-ring.jpg"/>
+                    </a>
+                    <div class="game-card__body">
+                        <div class="game-card__meta">
+                            <span>
+                                Action RPG · 2022
+                            </span>
+                            <span aria-label="Рейтинг: 4 из 5" class="rating">
+                                ★★★★
+                                <span class="rating__empty">
+                                    ★
+                                </span>
+                            </span>
+                        </div>
+                        <h2 class="game-card__title">
+                            Elden Ring
+                        </h2>
+                        <p class="game-card__developer">
+                            FromSoftware
+                        </p>
+                        <p class="game-card__description">
+                            Исследуйте Междуземье, находите скрытые тропы и сражайтесь с его обитателями.
+                        </p>
+                        <div class="game-card__bottom">
+                            <span class="price">
+                                999 ₽
+                            </span>
+                            <a class="button button--lime button--small" href="#description-frostline">
+                                Подробнее
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-card game-card--catalog" id="racing">
+                    <a class="game-card__art-link" href="#description-drift">
+                        <img alt="Официальная обложка Stardew Valley" class="game-card__image" src="assets/stardew-valley.jpg"/>
+                    </a>
+                    <div class="game-card__body">
+                        <div class="game-card__meta">
+                            <span>
+                                Симулятор фермы · 2016
+                            </span>
+                            <span aria-label="Рейтинг: 5 из 5" class="rating">
+                                ★★★★★
+                            </span>
+                        </div>
+                        <h2 class="game-card__title">
+                            Stardew Valley
+                        </h2>
+                        <p class="game-card__developer">
+                            ConcernedApe
+                        </p>
+                        <p class="game-card__description">
+                            Восстановите ферму, знакомьтесь с жителями долины и обустраивайте свою жизнь.
+                        </p>
+                        <div class="game-card__bottom">
+                            <span class="price">
+                                1 299 ₽
+                            </span>
+                            <a class="button button--lime button--small" href="#description-drift">
+                                Подробнее
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-card game-card--catalog" id="strategy">
+                    <a class="game-card__art-link" href="#description-orbit">
+                        <img alt="Официальная обложка Hades" class="game-card__image" src="assets/hades.jpg"/>
+                    </a>
+                    <div class="game-card__body">
+                        <div class="game-card__meta">
+                            <span>
+                                Рогалик · 2020
+                            </span>
+                            <span aria-label="Рейтинг: 4 из 5" class="rating">
+                                ★★★★
+                                <span class="rating__empty">
+                                    ★
+                                </span>
+                            </span>
+                        </div>
+                        <h2 class="game-card__title">
+                            Hades
+                        </h2>
+                        <p class="game-card__developer">
+                            Supergiant Games
+                        </p>
+                        <p class="game-card__description">
+                            Сын Аида снова и снова пытается выбраться из подземного царства.
+                        </p>
+                        <div class="game-card__bottom">
+                            <span class="price">
+                                799 ₽
+                            </span>
+                            <a class="button button--lime button--small" href="#description-orbit">
+                                Подробнее
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-card game-card--catalog" id="witcher">
+                    <a class="game-card__art-link" href="#description-long-road">
+                        <img alt="Официальная обложка The Witcher 3: Wild Hunt" class="game-card__image" src="assets/witcher-3.jpg"/>
+                    </a>
+                    <div class="game-card__body">
+                        <div class="game-card__meta">
+                            <span>
+                                RPG · 2015
+                            </span>
+                            <span aria-label="Рейтинг: 5 из 5" class="rating">
+                                ★★★★★
+                            </span>
+                        </div>
+                        <h2 class="game-card__title">
+                            The Witcher 3: Wild Hunt
+                        </h2>
+                        <p class="game-card__developer">
+                            CD PROJEKT RED
+                        </p>
+                        <p class="game-card__description">
+                            Отправляйтесь по следу Цири и принимайте решения в большом фэнтезийном мире.
+                        </p>
+                        <div class="game-card__bottom">
+                            <span class="price">
+                                649 ₽
+                            </span>
+                            <a class="button button--lime button--small" href="#description-long-road">
+                                Подробнее
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-card game-card--catalog" id="baldurs-gate">
+                    <a class="game-card__art-link" href="#description-last-lap">
+                        <img alt="Официальная обложка Baldur’s Gate 3" class="game-card__image" src="assets/baldurs-gate-3.jpg"/>
+                    </a>
+                    <div class="game-card__body">
+                        <div class="game-card__meta">
+                            <span>
+                                RPG · 2023
+                            </span>
+                            <span aria-label="Рейтинг: 4 из 5" class="rating">
+                                ★★★★
+                                <span class="rating__empty">
+                                    ★
+                                </span>
+                            </span>
+                        </div>
+                        <h2 class="game-card__title">
+                            Baldur’s Gate 3
+                        </h2>
+                        <p class="game-card__developer">
+                            Larian Studios
+                        </p>
+                        <p class="game-card__description">
+                            Соберите отряд, исследуйте Забытые Королевства и решайте, кому доверять.
+                        </p>
+                        <div class="game-card__bottom">
+                            <span class="price">
+                                899 ₽
+                            </span>
+                            <a class="button button--lime button--small" href="#description-last-lap">
+                                Подробнее
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div aria-live="polite" class="game-details">
+                <article class="game-detail" id="description-cosmic">
+                    <img alt="Официальная обложка Cyberpunk 2077" src="assets/cyberpunk-2077.jpg"/>
+                    <div>
+                        <p class="eyebrow">
+                            RPG · CD PROJEKT RED
+                        </p>
+                        <h2>
+                            Cyberpunk 2077
+                        </h2>
+                        <p>
+                            Откройте Найт-Сити, принимайте заказы и выбирайте собственный путь в футуристическом ролевом приключении CD PROJEKT RED.
+                        </p>
+                        <div class="game-detail__bottom">
+                            <span class="price">
+                                1 499 ₽
+                            </span>
+                            <a class="text-link" href="#catalog-list">
+                                Назад к каталогу
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-detail" id="description-frostline">
+                    <img alt="Официальная обложка Elden Ring" src="assets/elden-ring.jpg"/>
+                    <div>
+                        <p class="eyebrow">
+                            Action RPG · FromSoftware
+                        </p>
+                        <h2>
+                            Elden Ring
+                        </h2>
+                        <p>
+                            Путешествуйте по Междуземью, открывайте новые области и собирайте собственную историю в ролевой игре FromSoftware.
+                        </p>
+                        <div class="game-detail__bottom">
+                            <span class="price">
+                                999 ₽
+                            </span>
+                            <a class="text-link" href="#catalog-list">
+                                Назад к каталогу
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-detail" id="description-drift">
+                    <img alt="Официальная обложка Stardew Valley" src="assets/stardew-valley.jpg"/>
+                    <div>
+                        <p class="eyebrow">
+                            Симулятор фермы · ConcernedApe
+                        </p>
+                        <h2>
+                            Stardew Valley
+                        </h2>
+                        <p>
+                            Приведите в порядок старую ферму, выращивайте урожай и знакомьтесь с жителями Stardew Valley.
+                        </p>
+                        <div class="game-detail__bottom">
+                            <span class="price">
+                                1 299 ₽
+                            </span>
+                            <a class="text-link" href="#catalog-list">
+                                Назад к каталогу
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-detail" id="description-orbit">
+                    <img alt="Официальная обложка Hades" src="assets/hades.jpg"/>
+                    <div>
+                        <p class="eyebrow">
+                            Рогалик · Supergiant Games
+                        </p>
+                        <h2>
+                            Hades
+                        </h2>
+                        <p>
+                            Помогите Загрею выбраться из подземного царства в динамичной игре Supergiant Games, где каждая попытка открывает новые детали истории.
+                        </p>
+                        <div class="game-detail__bottom">
+                            <span class="price">
+                                799 ₽
+                            </span>
+                            <a class="text-link" href="#catalog-list">
+                                Назад к каталогу
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-detail" id="description-long-road">
+                    <img alt="Официальная обложка The Witcher 3: Wild Hunt" src="assets/witcher-3.jpg"/>
+                    <div>
+                        <p class="eyebrow">
+                            RPG · CD PROJEKT RED
+                        </p>
+                        <h2>
+                            The Witcher 3: Wild Hunt
+                        </h2>
+                        <p>
+                            Играйте за Геральта из Ривии, ищите Цири и беритесь за заказы на чудовищ в открытом мире.
+                        </p>
+                        <div class="game-detail__bottom">
+                            <span class="price">
+                                649 ₽
+                            </span>
+                            <a class="text-link" href="#catalog-list">
+                                Назад к каталогу
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="game-detail" id="description-last-lap">
+                    <img alt="Официальная обложка Baldur’s Gate 3" src="assets/baldurs-gate-3.jpg"/>
+                    <div>
+                        <p class="eyebrow">
+                            RPG · Larian Studios
+                        </p>
+                        <h2>
+                            Baldur’s Gate 3
+                        </h2>
+                        <p>
+                            Соберите команду и отправляйтесь в Забытые Королевства. Выборы, сражения и отношения с персонажами меняют ход приключения.
+                        </p>
+                        <div class="game-detail__bottom">
+                            <span class="price">
+                                899 ₽
+                            </span>
+                            <a class="text-link" href="#catalog-list">
+                                Назад к каталогу
+                                <span aria-hidden="true">
+                                    ↗
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <div class="site-footer__inner">
+                <a class="logo logo--footer" href="index.html">
+                    <span class="logo__mark">
+                        b
+                        <span>
+                            .
+                        </span>
+                    </span>
+                    <span class="logo__name">
+                        bestgames
+                    </span>
+                </a>
+                <p>
+                    Игры для хороших вечеров.
+                </p>
+                <div class="site-footer__contacts">
+                    <a href="tel:88009995599">
+                        8-800-999-55-99
+                    </a>
+                    <a href="mailto:best@games.ru">
+                        best@games.ru
+                    </a>
+                </div>
+                <a class="site-footer__about" href="index.html#about">
+                    О нас
+                </a>
+                <span class="site-footer__copy">
+                    © BestGames, 2026
+                </span>
+            </div>
+        </footer>
+    </body>
 </html>

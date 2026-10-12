@@ -45,6 +45,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .site-nav__link--active::after { position: absolute; right: 0; bottom: -30px; left: 0; height: 2px; background: var(--lime); content: ""; }
 .button { min-height: 48px; padding: 0 21px; display: inline-flex; align-items: center; justify-content: center; gap: 17px; border: 0; border-radius: 3px; cursor: pointer; font-size: 12px; font-weight: 700; transition: background-color 160ms ease, transform 160ms ease; }
 .button:hover { transform: translateY(-2px); }
+.button:disabled { cursor: wait; opacity: 0.65; transform: none; }
 .button span { font-size: 17px; font-weight: 400; }
 .button--dark { color: var(--white); background: var(--ink); }
 .button--dark:hover { background: #3a3e36; }
@@ -149,6 +150,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .form-field textarea { min-height: 106px; padding-top: 11px; resize: vertical; }
 .form-row { display: flex; justify-content: space-between; align-items: center; margin-top: -7px; }
 .form-row--end { justify-content: flex-end; }
+.form-message { display: none; margin: -3px 0 0; padding: 10px 12px; font-size: 11px; line-height: 1.5; }
+.form-message[data-state="error"] { display: block; background: #fff0ec; color: #a34332; }
+.form-message[data-state="success"] { display: block; background: #eef8e9; color: #467c2b; }
 .form-help, .account-card__switch a { color: #4e9e26; font-size: 11px; font-weight: 650; }
 .form-help:hover, .account-card__switch a:hover { text-decoration: underline; }
 .recovery-note { margin-top: 24px; padding: 13px; display: flex; gap: 11px; align-items: flex-start; background: #f3f6ef; }
@@ -245,8 +249,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .price-input input { padding-right: 38px; }
 .price-input span { position: absolute; top: 50%; right: 13px; transform: translateY(-50%); color: #8d9088; font-size: 12px; }
 .admin-form-card__actions { padding-top: 7px; display: flex; justify-content: flex-end; align-items: center; gap: 22px; }
+/* Адаптивность */
 
-/* Планшет: две колонки карточек и более компактные шапка и промоблок */
 @media (min-width: 700px) and (max-width: 1023px) {
     .page-width { width: calc(100% - 48px); }
     .site-header__inner, .site-footer__inner { width: calc(100% - 48px); }
@@ -267,7 +271,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     .admin-layout { grid-template-columns: 0.72fr 1.28fr; }
 }
 
-/* Телефон: навигация становится компактной, слайдер и страницы — одной колонкой */
+/* Мобильные устройства */
+
 @media (max-width: 699px) {
     body { font-size: 14px; }
     .page-width { width: calc(100% - 36px); }
@@ -371,6 +376,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     .admin-form-card .form-grid { grid-template-columns: 1fr; }
     .admin-form-card .form-grid .form-field input, .admin-form-card .form-grid .form-field select { min-height: 44px; }
 }
+
+/* Предпочтение уменьшенной анимации */
 
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
