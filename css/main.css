@@ -124,6 +124,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .site-footer__inner > p { margin: 0; color: rgb(255 255 255 / 52%); font-size: 11px; }
 .site-footer__contacts { display: flex; gap: 20px; font-size: 12px; }
 .site-footer__contacts a:hover { color: var(--lime); }
+.site-footer__about { color: rgb(255 255 255 / 75%); font-size: 11px; }
+.site-footer__about:hover { color: var(--lime); }
 .site-footer__copy { color: rgb(255 255 255 / 45%); font-size: 10px; }
 
 /* Страницы аккаунта */
@@ -183,6 +185,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .filter-pill--active { border-color: var(--lime); background: #e9f8e1; color: var(--ink); font-weight: 700; }
 .filter-pill--active span { color: #5d9d3f; font-size: 9px; }
 .catalog-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.game-details { margin-top: 26px; }
+.game-detail { display: none; grid-template-columns: minmax(220px, 0.72fr) 1.28fr; align-items: center; gap: 28px; padding: 25px; background: var(--white); scroll-margin-top: 24px; }
+.game-detail:target { display: grid; }
+.game-detail > img { width: 100%; aspect-ratio: 1.45; object-fit: cover; }
+.game-detail h2 { margin: 0; font-family: var(--display-font); font-size: 30px; letter-spacing: -0.7px; line-height: 1.1; }
+.game-detail p:not(.eyebrow) { max-width: 570px; margin: 12px 0 22px; color: #777a72; font-size: 12px; line-height: 1.7; }
+.game-detail__bottom { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
 .game-card--catalog .game-card__body { padding: 17px 18px 18px; }
 .game-card__developer { margin: -7px 0 9px; color: #7e8178; font-size: 10px; }
 .game-card__description { min-height: 51px; margin: 0 0 14px; color: #777a72; font-size: 11px; line-height: 1.6; }
@@ -262,14 +271,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 @media (max-width: 699px) {
     body { font-size: 14px; }
     .page-width { width: calc(100% - 36px); }
-    .site-header__inner { width: calc(100% - 36px); height: 68px; gap: 12px; }
+    .site-header__inner { width: calc(100% - 36px); height: auto; min-height: 68px; padding-block: 10px 7px; display: grid; grid-template-columns: 1fr auto; gap: 8px 12px; }
     .logo { gap: 7px; }
     .logo__mark { width: 31px; height: 31px; font-size: 24px; }
     .logo__name { font-size: 14px; }
-    .site-nav { margin-left: auto; gap: 14px; }
-    .site-nav__link { font-size: 10px; }
-    .site-nav__link--active::after { bottom: -25px; }
-    .site-nav__link:nth-child(3) { display: none; }
+    .site-nav { grid-column: 1 / -1; grid-row: 2; width: 100%; margin: 0; padding-top: 5px; gap: 19px; overflow-x: auto; scrollbar-width: none; }
+    .site-nav::-webkit-scrollbar { display: none; }
+    .site-nav__link { flex: 0 0 auto; font-size: 10px; }
+    .site-nav__link--active::after { bottom: -12px; }
     .site-header__login { min-height: 35px; padding-inline: 10px; gap: 7px; font-size: 10px; }
     .site-header__login span { font-size: 14px; }
     .showcase { margin-top: 18px; }
@@ -305,6 +314,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     .site-footer__inner { width: calc(100% - 36px); min-height: 150px; padding-block: 21px; display: grid; grid-template-columns: 1fr auto; gap: 10px 15px; }
     .site-footer__inner > p { grid-column: 1; grid-row: 2; display: block; }
     .site-footer__contacts { grid-column: 1; grid-row: 3; flex-wrap: wrap; gap: 6px 13px; font-size: 10px; }
+    .site-footer__about { grid-column: 2; grid-row: 2; align-self: start; justify-self: end; font-size: 10px; }
     .site-footer__copy { grid-column: 2; grid-row: 3; align-self: end; text-align: right; }
     .account-layout, .account-layout--register { width: calc(100% - 36px); min-height: 0; margin-block: 25px 45px; grid-template-columns: 1fr; }
     .account-aside, .account-aside--register { min-height: 275px; padding: 27px 25px 30px; }
@@ -326,6 +336,10 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     .catalog-filters { margin-right: -18px; padding-bottom: 14px; gap: 6px; }
     .filter-pill { min-height: 32px; padding-inline: 11px; font-size: 10px; }
     .catalog-grid { grid-template-columns: 1fr; gap: 15px; }
+    .game-detail { grid-template-columns: 1fr; gap: 17px; padding: 18px; }
+    .game-detail > img { max-height: 210px; }
+    .game-detail h2 { font-size: 25px; }
+    .game-detail__bottom .text-link { font-size: 10px; }
     .game-card--catalog .game-card__image { aspect-ratio: 1.72; }
     .game-card__description { min-height: 0; }
     .profile-page > .section-heading { align-items: flex-start; }
