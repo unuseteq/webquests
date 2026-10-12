@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-labelledby="title desc">
+  <title id="title">Северный маршрут</title><desc id="desc">Дорога петляет среди снежных гор под бледным зимним небом.</desc>
+  <defs>
+    <linearGradient id="sky" y2="1"><stop stop-color="#d0e2e5"/><stop offset=".62" stop-color="#99b9c0"/><stop offset="1" stop-color="#5c7b82"/></linearGradient>
+    <linearGradient id="snow" y2="1"><stop stop-color="#f2f0df"/><stop offset="1" stop-color="#9db7b5"/></linearGradient>
+    <linearGradient id="road" x2="1"><stop stop-color="#28343a"/><stop offset=".5" stop-color="#435055"/><stop offset="1" stop-color="#273238"/></linearGradient>
+    <linearGradient id="dusk" y2="1"><stop stop-color="#efaa65" stop-opacity="0"/><stop offset="1" stop-color="#d7744f" stop-opacity=".35"/></linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h900v540H0z"/><circle cx="693" cy="127" r="62" fill="#f4edce" opacity=".65"/><path fill="url(#dusk)" d="M0 182h900v358H0z"/>
+  <path d="m0 321 126-197 107 116 118-171 151 233 104-165 116 160 105-102 73 146v199H0z" fill="#627e82" opacity=".75"/>
+  <path d="m53 291 73-167 66 111-29-17-34 24-26-14Zm246-36 52-186 82 126-44-28-39 39-27-14Zm259 4 48-128 73 108-33-19-27 27-30-17Zm229 43 54-112 58 112-38-17-25 19-23-17Z" fill="#dce7dc"/>
+  <path d="M0 325c130-58 200-42 321 11 128-70 222-61 343 4 89-40 151-32 236 8v192H0z" fill="url(#snow)"/>
+  <path d="M0 414c152-72 255-46 360-7 116-36 176-49 287-5 98 38 176 15 253-8v146H0z" fill="#839d9c" opacity=".55"/>
+  <path d="M504 540c-16-74-13-126-64-182-33-36-86-69-128-90-24-13-33-31-24-42 11-13 32-5 51 7 58 38 107 83 141 125 46 57 61 110 70 182Z" fill="url(#road)"/>
+  <path d="M537 540c-10-75-28-122-73-175-33-38-72-69-117-98 48 24 101 52 143 93 51 50 70 105 80 180Z" fill="#d0d6c8" opacity=".7"/>
+  <path d="m229 383-36 17m94-30-25 20m357 3 32 18m-78-51 25 19" stroke="#738b88" stroke-linecap="round" stroke-width="7"/>
+  <g fill="#e9f1e8" opacity=".85"><circle cx="166" cy="96" r="3"/><circle cx="265" cy="55" r="2"/><circle cx="434" cy="89" r="2.5"/><circle cx="811" cy="84" r="2"/><circle cx="80" cy="208" r="2"/><circle cx="736" cy="238" r="2.3"/></g>
+</svg>
